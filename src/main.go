@@ -2,12 +2,11 @@ package main
 
 import (
 	"fmt"
-	a "optoseg/src/algo"
+	a "optoseg/src/algo/grid"
 	"sync"
 )
 
 func main() {
-	// Parse configuration (you can add command-line flags or read from a config file)
 	config := a.Config{
 		AdjBiasRange: [2]float64{-1.0, 1.0},
 		LrBiasRange:  [2]float64{-1.0, 1.0},
